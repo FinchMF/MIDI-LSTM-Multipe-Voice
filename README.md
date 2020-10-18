@@ -41,8 +41,12 @@ The expection for the pipeline is to:
 
 There are two operational shell scripts:
 
-    $ bash reset.sh
-    $ bash execute.sh
+    $ bash reset.sh 
+    $ bash execute.sh '<composername>'
+
+## List of Composers
+
+- updated shortly
 
 ### RESET
 Reset will ease folders: 'data' , 'run' and 'models' . This resets repo.
@@ -50,4 +54,4 @@ Reset will ease folders: 'data' , 'run' and 'models' . This resets repo.
 ### EXECUTE
 After the initial repo clone, run: 
         
-    $ bash execute.sh
+    $ bash execute.sh '<composername>'
