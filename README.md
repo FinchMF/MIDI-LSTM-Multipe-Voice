@@ -23,7 +23,7 @@ Parameters and Model Configurations, see:
 
 ## EXECUTE Program
 
-### Aim of Pipeline:
+### Aim of Program:
 
 The expection for the pipeline is to:
 * webscrape midi 
