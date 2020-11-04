@@ -11,6 +11,53 @@ Supplementing and developing off the MIDI-LSTM---TRAINING PIPELINE, this program
 * MIDI data transformer
 * RNN-ATTN model with Stacked LSTMs 
 
+RNN-ATTN with Stacked LSTMs:
+* Model's architeture below
+
+         ​(Embedded Pitch & Duration Input Matrix)
+                        ​|
+                        ​|
+                        ​|
+                    *---​LSTM
+                    |    -Dropout
+                    |    ​|
+                    |    ​LSTM
+                    |    ​-Dropout
+                    |    ​|
+                    |    ​ATTN MODEL
+                    |    ​|
+                    *---LSTM
+                    |    -Dropout
+                    |    |
+                    |    ATTN MODEL
+                    |    |
+                    |    ​Fully Connected Layer
+                    |    -Dropout
+                    |    ​|
+                    *---LSTM
+                    |    -Dropout
+                    |    |
+                    |    Fully Connected Layer
+                    |    -Dropout
+                    |    |
+                    |    ATTN MODEL
+                    |    |
+                    |    Fully Connected Layer
+                    |    -Dropout
+                    |    |
+                    |    Fully Connected Layer
+                    |    -Dropout
+                    |    |
+                    *---LSTM
+                    |    -Dropout
+                    |    |
+                    |    Fully Connected Layer
+                    |    -Dropout
+                    |   ​|
+        ​Fully Connected Layer (softmax output)
+                ​        |                      
+            (​Pitch & Duration Output Matrix)
+
 #### Webscraper:
 
 * MIDI is scraped from www.piano_midi.com and www.midi_world.com. All piano peices are scraped. 
@@ -46,7 +93,45 @@ There are two operational shell scripts:
 
 ## List of Composers
 
-- updated shortly
+* albeniz		
+* bartok		
+* borodin		
+* chopin		
+* godowsky	
+* handel	
+* liszt		
+* mj_starke	
+* muss		
+* mw_liszt	
+* pacchioni	
+* ravel
+* schum		
+* sinding 
+* bach		
+* beeth		
+* brahms		
+* clementi
+* grana		
+* haydn		
+* mendelssohn	
+* moszkowski	
+* mw_bach	
+* mw_mozrt
+* rach		
+* scarlatti	
+* schumann	
+* tschai  
+* balak	
+* beethoven 
+* burgm		
+* debuss		
+* grieg		
+* mozart	
+* mw_byrd		
+* mw_tchai	
+* rachmaninov	
+* schub		
+* shostakovich
 
 ### RESET
 Reset will ease folders: 'data' , 'run' and 'models' . This resets repo.
