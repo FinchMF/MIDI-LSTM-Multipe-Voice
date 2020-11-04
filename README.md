@@ -14,7 +14,7 @@ NOTE: LinearSVC in progress
 * RNN-ATTN model with Stacked LSTMs 
 
 RNN-ATTN with Stacked LSTMs:
-* Model's architeture below
+* Model's architecture below
 
          ​(Embedded Pitch & Duration Input Matrix)
                         ​|
