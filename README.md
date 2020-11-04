@@ -4,6 +4,8 @@
 
 Supplementing and developing off the MIDI-LSTM---TRAINING PIPELINE, this program generates piano midi. Where as Cello midi focuses on melody as a combination of a vector of pitchs and a vector of durations - here we address midi as a 128x300 matrix of pitch and duration. Additionally, I've added in classifier, LinearSVC, to critique the LSTM's generated midi.
 
+NOTE: LinearSVC in progress
+
 ## CONTENTS OF Program
 
 * Web MIDI Scraper
